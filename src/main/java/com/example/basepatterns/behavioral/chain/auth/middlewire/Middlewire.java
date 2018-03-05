@@ -13,12 +13,6 @@ public abstract class Middlewire {
     }
 
     /**
-     * подклассы реализуют в этом методе конкретные проверки
-     */
-
-    public abstract boolean check(String mail, String password);
-
-    /**
      * запускаем проверку в следующем объекте или завершаем проверку,
      * если мы в последнем элементе цепи
      */
@@ -29,4 +23,12 @@ public abstract class Middlewire {
         }
         return next.check(email, password);
     }
+
+
+    /**
+     * подклассы реализуют в этом методе конкретные проверки
+     */
+
+    public abstract boolean check(String mail, String password);
+
 }
