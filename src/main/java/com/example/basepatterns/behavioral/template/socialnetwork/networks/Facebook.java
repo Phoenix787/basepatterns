@@ -1,5 +1,7 @@
 package com.example.basepatterns.behavioral.template.socialnetwork.networks;
 
+import java.util.List;
+
 public class Facebook extends Network {
 
     public Facebook(String username, String password) {
@@ -51,4 +53,6 @@ public class Facebook extends Network {
         }
 
     }
+
+
 }

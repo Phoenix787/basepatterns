@@ -39,7 +39,7 @@ class Comp{
 // но эта оболочка вызывает только одну команду класса Comp
 class StartCommand implements Command{
     //чтобы это не повторялось во всех реализациях интерфейса Command, его можно сделать абстрактным классом
-    Comp comp;
+    private Comp comp;
     public StartCommand(Comp comp) {
         this.comp = comp;
     }
@@ -52,7 +52,7 @@ class StartCommand implements Command{
 }
 
 class StopCommand implements Command{
-    Comp comp;
+    private Comp comp;
     public StopCommand(Comp comp) {
         this.comp = comp;
     }
@@ -63,7 +63,7 @@ class StopCommand implements Command{
 }
 
 class ResetCommand implements Command{
-    Comp comp;
+    private Comp comp;
     public ResetCommand(Comp comp) {
         this.comp = comp;
     }
